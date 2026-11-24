@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#b8c9d1"/>
+      <stop offset="1" stop-color="#eef3f5"/>
+    </linearGradient>
+  </defs>
+  <!-- sky and sun -->
+  <rect width="800" height="500" fill="url(#sky)"/>
+  <circle cx="560" cy="205" r="55" fill="#ffffff" opacity="0.9"/>
+  <!-- sea with two lighter wave lines -->
+  <rect y="260" width="800" height="150" fill="#6a8a99"/>
+  <path d="M0 300 Q100 280 200 300 T400 300 T600 300 T800 300 V320 H0 Z" fill="#ffffff" opacity="0.18"/>
+  <path d="M0 345 Q100 325 200 345 T400 345 T600 345 T800 345 V365 H0 Z" fill="#ffffff" opacity="0.12"/>
+  <!-- sand -->
+  <path d="M0 395 Q200 360 400 388 T800 380 V500 H0 Z" fill="#e4d8bf"/>
+  <!-- palm tree -->
+  <path d="M150 470 Q168 370 142 275" stroke="#6b4a2b" stroke-width="10" fill="none" stroke-linecap="round"/>
+  <path d="M142 275 Q95 235 45 272 Q100 252 142 275 Z" fill="#2f7d4f"/>
+  <path d="M142 275 Q190 230 245 262 Q190 252 142 275 Z" fill="#3b9560"/>
+  <path d="M142 275 Q120 225 150 190 Q158 235 142 275 Z" fill="#2f7d4f"/>
+  <!-- label -->
+  <text x="400" y="458" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#000000" fill-opacity="0.45">Photo coming soon</text>
+</svg>

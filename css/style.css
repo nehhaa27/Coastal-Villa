@@ -1,0 +1,108 @@
+/* =====================================================
+   css/style.css - our own styles, added on top of Bootstrap 5
+   ===================================================== */
+
+/* Colours we reuse. */
+:root {
+    --ocean: #8b2f47;       /* deep rose-wine: header, card borders, prices */
+    --ocean-dark: #3b1230; /* dark plum: footer */
+    --sand: #fff0dc;        /* light peach: price summary box */
+    --coral: #ea580c;       /* sunset orange: buttons */
+}
+
+body {
+    background-color: #fdfaf4;
+    color: #2b3a3f;
+}
+
+/* Navigation bar colour */
+.bg-ocean {
+    background-color: var(--ocean) !important;
+}
+
+/* Our own "coral" button style (Bootstrap has no coral button) */
+.btn-coral {
+    background-color: var(--coral);
+    border-color: var(--coral);
+    color: #fff;
+    font-weight: 600;
+}
+.btn-coral:hover {
+    background-color: #c2410c;
+    border-color: #c2410c;
+    color: #fff;
+}
+
+/* Big banner at the top of the home page */
+.hero {
+    background: linear-gradient(180deg, #5b2a5e 0%, #e4572e 55%, #ffd8a8 100%);
+    color: #fff;
+    padding: 110px 0 130px 0;
+    text-align: center;
+}
+.hero p {
+    max-width: 640px;
+    margin: 0 auto 25px auto;
+}
+
+/* Small page title banner used on the rooms / booking pages */
+.page-banner {
+    background: linear-gradient(90deg, #8b2f47, #f97316);
+    color: #fff;
+    padding: 40px 0;
+}
+
+/* Cards for location highlights and facilities */
+.feature-card {
+    border: none;
+    border-top: 4px solid var(--ocean);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    height: 100%;
+}
+.feature-icon {
+    font-size: 2rem;
+}
+
+/* Room photo: same height for every card, picture is cropped to fit */
+.room-img {
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+}
+.room-card {
+    border: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.price-tag {
+    color: var(--ocean);
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+/* Box that shows nights and total price on the booking page */
+.total-box {
+    background-color: var(--sand);
+    border-radius: 10px;
+    padding: 18px;
+}
+
+/* Footer */
+.site-footer {
+    background-color: var(--ocean-dark);
+    color: #ffe4cc;
+}
+
+/* ---------- Responsive design (CSS media query) ----------
+   Bootstrap's grid already adapts the layout to phone / tablet / desktop.
+   This media query adds our own small changes for phones (screens up to 576px wide). */
+@media (max-width: 576px) {
+    .hero {
+        padding: 60px 0 70px 0;     /* shorter banner */
+    }
+    .hero h1 {
+        font-size: 2.2rem;          /* smaller title */
+    }
+    .room-img {
+        height: 180px;              /* smaller room pictures */
+    }
+}
